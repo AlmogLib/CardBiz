@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "name": "almog",
+      "email": "almog@gmail.com",
+      "password": "12345678",
+      "isBusiness": true,
+      "id": 1,
+      "myCards": [
+        5
+      ]
+    },
+    {
+      "name": "Sapir",
+      "email": "sapir@gmail.com",
+      "password": "12345678",
+      "isBusiness": false,
+      "id": 2,
+      "myCards": [
+        2,
+        5
+      ]
+    },
+    {
+      "name": "Paula",
+      "email": "paula@gmail.com",
+      "password": "12345678",
+      "isBusiness": true,
+      "id": 3
+    },
+    {
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "12345678",
+      "isBusiness": false,
+      "isLoggedIn": true,
+      "id": 4,
+      "myCards": [
+        1
+      ]
+    },
+    {
+      "name": "Business",
+      "email": "business@test.com",
+      "password": "12345678",
+      "isBusiness": true,
+      "isLoggedIn": true,
+      "id": 5
+    }
+  ],
+  "cards": [
+    {
+      "name": "HackerU",
+      "description": "HackerU is a leading company in Israel for training and placing employees for high-tech professions.",
+      "address": "רחוב שוהם 5, מגדלי פז קומה 3, מתחם הבורסה רמת גן",
+      "phone": "0722584901",
+      "image": "https://www.hackeru.co.il/wp-content/themes/hackerusite/dist/images/logo.png",
+      "website": "https://www.hackeru.co.il/",
+      "userId": 5,
+      "id": 1
+    },
+    {
+      "name": "Tesla",
+      "description": "Electric Cars, Solar & Clean Energy",
+      "address": "Austin, Texas, USA",
+      "phone": "888 5183752",
+      "image": "https://1000logos.net/wp-content/uploads/2018/02/Logo-Tesla.jpg",
+      "website": "https://www.tesla.com/",
+      "userId": 5,
+      "id": 2
+    },
+    {
+      "name": "Amazon",
+      "description": "Whether you're celebrating a wedding, a baby, a birthday, or other memorable milestones, our Gift Lists and registries will help you and your guests find the perfect gifts.",
+      "address": "410 Terry Ave N, Seattle 98109, WA",
+      "phone": "1 866 216 1072",
+      "image": "https://m.media-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png",
+      "website": "https://www.amazon.com/",
+      "userId": 5,
+      "id": 3
+    },
+    {
+      "name": "NVIDIA",
+      "description": "NVIDIA invents the GPU and drives advances in AI, HPC, gaming, creative design, autonomous vehicles, and robotics.",
+      "address": "2788 San Tomas Expressway Santa Clara, CA 95051",
+      "phone": "+1 408 486 2000",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABfCAMAAADlGKjjAAAAk1BMVEX///90txsAAABvtQhwtgDm8ttlsACo0HxrswD5+fnB3aQcHBwUFBSUlJStra3R0dGDg4Pc3NwnJydsbGzj4+Px8fEMDAzW6cK825rt9eT3+/LHx8eRxVeVx1/7/fiBvTk6Ojq6urpPT0+cnJxHR0eLi4ut0ojb68vM47WGv0SOxE+bymhhYWGkpKR4eHil0HYwMDBtHdS1AAAFw0lEQVRoge2YeZuiPAzAOQQKHjPryHCIMF4cOup8/0/3tmkKLYozqLv77POaf2xLm1+TJimoaU95ylOe8hslODk95PQwrkfMHkIeyNV7yODJ/de4epbpA2IT849xLc+pSAjN2Cod3f4efT83OJnMRuSCRGH2ndV3cq1c5wTTDpUHxf46+S5usQDlJtGzJA+plEWc1lu6Sr6DWyRMsUmyUxnRrmebhEqVFwJdVN0hfjPXWnDqIkCMyCPTrjxB9jpNvpGb5gOm0V5Y9RCrz6iUZKXYXZfJt3GDjID6QhrzsiTJBjbnkCTCDTqXwbdwURfJmxgKFzrEc2p5sCXdNIXJl+vYDVyLayYB9qOcZqvZ5C+GE8mxH1wC9+eWNrcHHRmfeHWS6wYPJ7IQG7kA7s11OFaPeTfkUa1XSZg2k6IMwEk3uCc3XRAZy11OqjJm+bur80eLKwDvsXvu6p5ckRY8fUrIHOJBhzqXVFENzpQzztt53JObyGeJkYrJxHpmhu6ntyITG4M6utfP6LAddPZQOkTlgF2Y6FnMtFBgz8pW37gC9+mkqDdRpxO3njAL04S3Hf4kzs6rZV9uwMMZzEphE5XC1WnEoXkijy5h++cRBCp6tyS17TWX5AVRsMLJpnkX1+IGQ2qmsIlMtddEPp60hThyOsmXU/96xUPGhmOFgqBGN4rIoBJH2ST5Pu7PjXEldPImtGRufSvkNvZ59JUZuZmLuYTBCvXLLFSuuAXjBH2eiWRLQzzmW+7BsMkYesSsM/AkLtHR2AAjiuzl0g1Zf9u9v+CvkGBEugNXL6zQhu88It5yoj3BOPOUxTz7buLyjDR17k24oej9W+b7veOhR9NQGFtZyloru91eLeIGYzUuqGuV+5eVZzS29VrN782buVo00CWLWZxKAMuxRfbsImVZoN8RzyAx1sL6Zaf0opiK9Hlkqu991C87+478FWBeBGynvvlsm34N1p+DJtkFyoIgua9eCRFvlTrGr1I3SOYotsZeRe6rz5KU/LRIFlqCC5lkVk4QS/PSwtGVInonV4sdvHoGlVOGSZXtkr0TBpFUJiiUvuYO9Lbc+x26twdNwqTtx3HgZORR7+2qRDmB+DVbiUoNDXf6o7/LFCly3baVAmGV1LnkN33/ypJapVcGQVCWobPQ7e//XHng/zk2++xmfxZ+g3w09//2v9lf4oZ2L3kYN7Z6ycO4T3nKU74T1xfiNmNM2j1XjLquq044W6GdTziTsTFCGU6/3iZsyB8Nh0NjjBNe3mlv6muv9Pf9VdN+GUOU6cdxiZO+6BLjpdHJHo9W17mKjOZ07JO1PuQJVMUr+z0yrixDTp6ytuC6Q3w4+znXMCh4Ag0fTWHtJXJf21zDOJxxl+LRtg/X0LSZgSxNtP02l56LmP/S5jJ3fTGbh1eOGLibCZXDG9czQUe/wfMJulnljlzXny03MP+zxYWdrrfN1ru5HKHNhZ4JGo6bZ1tpcfmCI2u/z1QuEGe/xH5/wOW6p8K5TI8/FEd9ieuKiJC5CIS4+PUz7pz7UNNWrDEWI6t6Ty2uBkezVrhzdND6emQpXND5TrkH1vgQnpx0csc4KHHZlkfUQT4b+uqMrMtcHrS+5n4IN1/mglFHmevX+lZXI0vhzgRX2/BFANlondztmb1rPHFM48+e3DUfhqeHbu4GnzfckVGXOvBZV83q4IL2obtqll7i8sR7kbh8RJLxJWg3V4ODXTZuvsTlkKEvcT/b3GlHZHVxYXzauFnlvm+32yMvV7BYcGdtLD/r9Xjdxndxm/I/u8CVZSZxISzGMxRIQhpZb9v1+PhDriYuM3RzJxeiCbk87epQmuO+VpPPydFXuVvcU8M13OaBAdWo4bbv3xGqG3EugD5q3byMbrWPyXr51nL0C7uK5tjxWWeCe4D25CD2OceJfA6T5XwmlEHf58peGuWwZqnNV4fNXPsbcu3N4ylPeco/If8BLfpt2pVUZtwAAAAASUVORK5CYII=",
+      "website": "https://www.nvidia.com/",
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "name": "Johnson & Johnson",
+      "description": "At Johnson & Johnson, we believe good health is the foundation of vibrant lives, thriving communities and forward progress. ",
+      "address": "1 Johnson And Johnson Plaza  New Brunswick  New Jersey, US  08933",
+      "phone": "+1 732 524 0400",
+      "image": "https://www.logotaglines.com/johnson-and-johnson-logo-tagline/johnson-johnson-logo/",
+      "website": "https://www.jnj.com/",
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "McDonalds",
+      "description": "Back in 1954, a man named Ray Kroc discovered a small burger restaurant in California, and wrote the first page of our history.",
+      "address": "110 N. Carpenter St. Chicago, IL 60607.",
+      "phone": "+1 800 244 6227",
+      "image": "https://upload.wikimedia.org/wikinews/en/thumb/9/97/Mcdonalds-logo.JPG/603px-Mcdonalds-logo.JPG",
+      "website": "https://www.mcdonalds.com/",
+      "id": 6,
+      "userId": 5
+    }
+  ]
+}

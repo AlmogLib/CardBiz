@@ -1,24 +1,86 @@
-import React from 'react';
-import logo from './logo.svg';
+import { createContext, useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
+import About from './components/About';
+import AllCards from './components/AllCards';
+import Buisness from './components/Business';
+import CreateNewCard from './components/CreateNewCard';
+// import FavCards from './components/FavCards';
+import FavoritesCards from './components/FavoritesCards';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import MyCards from './components/MyCards';
+import Navbar from './components/Navbar';
+import PageNotFound from './components/PageNotFound';
+import Profile from './components/Profile';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+import User from './interfaces/User';
+import { getUserById } from './services/userServices';
 
-function App() {
+const emptyUser: User = {
+  name: "",
+  email: "",
+  password: "",
+  isLoggedIn: false,
+  isBusiness: false,
+};
+
+export const UserContext = createContext({
+  userctx: emptyUser,
+  changeUser: (value: User) => {
+    console.log(value);
+
+  },
+});
+
+export function App() {
+  let [user, setUser] = useState<User>(emptyUser);
+
+  useEffect(() => {
+    const getUser = async () => {
+      try {
+        let userId: number = await JSON.parse(
+          sessionStorage.getItem("userId") as string
+        );
+
+        if (!userId) return;
+
+        getUserById(userId)
+          .then((res) => {
+            setUser({ ...res.data, isLoggedIn: true });
+          })
+          .catch((err) => console.log(err));
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getUser();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToastContainer />
+      <Router>
+        <UserContext.Provider value={{ userctx: user, changeUser: setUser }}>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/buisness" element={<Buisness />} />
+            <Route path="/newcard" element={<CreateNewCard />} />
+            <Route path="/favcards" element={<FavoritesCards />} />
+            <Route path="/mycards" element={<MyCards />} />
+            <Route path="/allcards" element={<AllCards />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </UserContext.Provider>
+        <Footer />
+      </Router>
     </div>
   );
 }
