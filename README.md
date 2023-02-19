@@ -4,7 +4,7 @@
 
 #
 #
-# You need to create the .env file to make it work. plese add this line to the file: REACT_APP_API = "http://localhost:8000";
+# You need to create the .env file to make it work. please add this line to the file: REACT_APP_API = "http://localhost:8000";
 #
 #
 
