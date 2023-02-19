@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import './App.css';
 import About from './components/About';
 import AllCards from './components/AllCards';
-import Buisness from './components/Business';
+// import Buisness from './components/Business';
 import CreateNewCard from './components/CreateNewCard';
 // import FavCards from './components/FavCards';
 import FavoritesCards from './components/FavoritesCards';
@@ -70,7 +70,7 @@ export function App() {
             <Route path="/about" element={<About />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
-            <Route path="/buisness" element={<Buisness />} />
+            {/* <Route path="/buisness" element={<Buisness />} /> */}
             <Route path="/newcard" element={<CreateNewCard />} />
             <Route path="/favcards" element={<FavoritesCards />} />
             <Route path="/mycards" element={<MyCards />} />

@@ -9,28 +9,17 @@ interface AboutProps {
 const About: FunctionComponent<AboutProps> = () => {
     return (<>
         <div className="container">
-            <div className="row">
+            <div className="row mt-5">
                 <img src="/Workspace2.jpeg" alt="" className="col-md-6" />
                 <div className="col-md-6">
                     <h3 className="display-3">Who Are We?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam nesciunt minima in consectetur, reiciendis, similique exercitationem natus consequuntur quam, soluta voluptate excepturi provident culpa dolore ad porro! Dignissimos, ducimus.
-                        Quibusdam totam ipsa magnam vero necessitatibus, magni molestiae ut distinctio rem a minima cumque, ducimus dolores eos sit. Ipsum quam magni veniam aut impedit ex quibusdam distinctio quasi ipsa omnis!
-                        Eligendi quas sapiente vero, inventore exercitationem voluptatum asperiores est et sint, consectetur, enim hic labore nulla atque ipsa illo tempore maiores quo earum sed voluptatibus dolorem eveniet minima animi. Et?
-                        Suscipit saepe eius, quibusdam quas inventore similique excepturi officia asperiores culpa nostrum vitae velit sunt accusamus quae aperiam porro ullam, ad quos incidunt quis, totam nisi? Soluta iusto delectus officiis!
-                        Perferendis sequi doloribus, eius enim repellendus similique aperiam rem animi quos fugiat impedit deserunt provident nam recusandae, vero reprehenderit debitis alias distinctio? Tempora consequatur adipisci a nihil odio dolore nobis.
+                    <p className="mt-3">
+                        You just started a new business and need some publicity? Do you want to gain more access in the virtual world?
+                        CardBiz is just what you look for.
+                        Create Your Digital Business Card Today.
                     </p>
-                    <div className="flip-card">
-                        <div className="flip-card-inner">
-                            <div className="flip-card-front">
-                                <img src="img_avatar.png" alt="Avatar" />
-                            </div>
-                            <div className="flip-card-back">
-                                <h1>John Doe</h1>
-                                <p>Architect & Engineer</p>
-                                <p>We love that guy</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 className="display-3 mt-5">What is a digital business card?</h3>
+                    <p className="mt-3">Digital business cards are the modern way to share contact information. Also known as virtual and electronic business cards, digital business cards are more interactive, cost-effective, and sustainable than their physical counterparts. One significant benefit of digital business cards is that they can be shared with anyone, anywhere. </p>
                 </div>
             </div>
         </div>

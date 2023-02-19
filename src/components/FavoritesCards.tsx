@@ -1,4 +1,3 @@
-// import "../css/myCards.css";
 import axios from "axios";
 import { FunctionComponent, useContext, useEffect, useState } from "react";
 import { UserContext } from "../App";

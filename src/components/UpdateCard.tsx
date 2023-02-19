@@ -42,8 +42,8 @@ const UpdateCard: FunctionComponent<UpdateCardProps> = ({ onHide, cardId, refres
     }, []);
     return (<>
         <div className="container mt-5 text-center">
-            <h3 className="display-3">Create New Card</h3>
-            <p>Create a card for your business</p>
+            <h3 className="display-3">Update Card</h3>
+            <p>Update your card for your business</p>
             <form onSubmit={formik.handleSubmit}>
                 <div className="form-floating mb-3">
                     <input
@@ -142,7 +142,7 @@ const UpdateCard: FunctionComponent<UpdateCardProps> = ({ onHide, cardId, refres
                     )}
                 </div>
                 <button type="submit" disabled={!formik.isValid || !formik.dirty} className="btn btn-info my-3 w-100">
-                    Create
+                    Update
                 </button>
             </form>
         </div>

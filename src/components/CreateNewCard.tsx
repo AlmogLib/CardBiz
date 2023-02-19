@@ -8,8 +8,7 @@ import { addCard } from "../services/cardServices";
 import "../css/newCard.css";
 import { UserContext } from "../App";
 
-interface CreateNewCardProps {
-}
+interface CreateNewCardProps { }
 
 const CreateNewCard: FunctionComponent<CreateNewCardProps> = () => {
     let navigate = useNavigate();
@@ -26,11 +25,9 @@ const CreateNewCard: FunctionComponent<CreateNewCardProps> = () => {
         }),
         onSubmit: (values: Card) => {
             console.log(UserCtx.userctx);
-
             addCard({ ...values, userId: UserCtx.userctx.id })
                 .then((res) => {
                     console.log(UserCtx.userctx.id);
-
                     navigate("/");
                     successMsg("Card added successfully");
 

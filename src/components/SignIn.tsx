@@ -78,7 +78,15 @@ const SignIn: FunctionComponent<SignInProps> = () => {
                 </button>
             </form>
             <Link to="/signUp">New User? Register here</Link>
+            <div className="users mt-5">
+                <p><strong>Example Users:</strong></p>
+                <p> User: user@test.com</p>
+                <p> Password: 12345678</p>
+                <p> Business: business@test.com</p>
+                <p> Password: 12345678</p>
+            </div>
         </div>
+
 
     </>);
 }

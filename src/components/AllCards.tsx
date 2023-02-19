@@ -27,20 +27,18 @@ const AllCards: FunctionComponent<AllCardsProps> = () => {
                         <div
                             key={card.id}
                             className="card ms-1 mx-4 my-4"
-                            style={{ width: "18rem" }}
-                        >
+                            style={{ width: "18rem" }}>
                             <img
                                 src={card.image}
                                 className="card-img-top"
                                 alt={card.name}
-                                style={{ height: "100%" }}
                             />
                             <div className="card-body">
                                 <h5 className="card-title">{card.name}</h5>
                                 <p className="card-text">{card.description}</p>
-                                <p className="text-success">{card.phone}</p>
-                                <p className="text-success">{card.address}</p>
-                                <p className="text-success">{card.website}</p>
+                                <p className="card-text">{card.phone}</p>
+                                <p className="card-text">{card.address}</p>
+                                <p className="card-text">{card.website}</p>
                                 {UserCtx.userctx.isLoggedIn && !UserCtx.userctx.isBusiness &&
                                     <button
                                         onClick={() => {
@@ -61,10 +59,9 @@ const AllCards: FunctionComponent<AllCardsProps> = () => {
                                         }}
                                         disabled={UserCtx.userctx.myCards?.includes(card.id as number)}
                                     >
-                                        <i className="fa-solid fa-star"></i>
+                                        <i className="fa-solid fa-star btn-info"></i>
                                     </button>
                                 }
-
                             </div>
                         </div>
                     ))}

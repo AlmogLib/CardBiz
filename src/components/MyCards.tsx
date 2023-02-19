@@ -58,7 +58,6 @@ const MyCards: FunctionComponent<MyCardsProps> = () => {
                                     src={card.image}
                                     className="card-img-top"
                                     alt={card.name}
-                                    style={{ height: "100%" }}
                                 />
                                 <div className="card-body">
                                     <h5 className="card-title">{card.name}</h5>
