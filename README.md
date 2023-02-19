@@ -1,5 +1,14 @@
 # Getting Started with Create React App
 
+
+
+#
+#
+# You need to create the .env file to makr it work. plese add this line to the file: REACT_APP_API = "http://localhost:8000";
+#
+#
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
